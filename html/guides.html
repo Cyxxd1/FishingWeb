@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishing Made Easy!</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../Website.html">
+                <img src="../images/logo2.png" alt="Fishing Made Easy">
+                </a>
+            </div>
+            <!-- Hamburger icon added here -->
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <nav>
+                <!-- Added an id to the ul for easier JavaScript manipulation -->
+                <ul id="nav-menu">
+                    <li><a href="../Website.html">Home</a></li>
+                    <li>
+                        <a href="../guides.html">Guides</a>
+                        <div class="dropdown">
+                            <a href="../html/basics-fishing.html">Basics of Fishing</a>
+                            <a href="../html/freshwater.html">Freshwater Fishing</a>
+                            <a href="../html/saltwater.html">Saltwater Fishing</a>
+                        </div>
+                    </li>
+                    <li><a href="../html/events.html">Events</a></li>
+                    <li><a href="../html/equipment-reviews.html">Equipment Reviews</a></li>
+                    <li><a href="../html/locations.html">Locations</a></li>
+                    <li><a href="../html/about-us.html">About Us</a></li>
+                </ul>
+                <!-- Search bar & Sign in for Mobile version -->
+                <div class="search-signin mobile-only">
+                    <input type="search" placeholder="Search">
+                    <button onclick="window.location.href='sign-in.html';">Sign In</button>
+                </div>
+            </nav>
+            <!-- Search bar & Sign in for Desktop version -->
+            <div class="search-signin desktop-only">
+                <input type="search" placeholder="Search">
+                <button onclick="window.location.href='../html/sign-in.html';">Sign In</button>
+            </div>
+        </div>
+    </header>
+    <section class="button-container">
+        <a href="../html/basics-fishing.html" class="image-button" style="background-image: url('../images/basics.jpg');">
+            <span class="button-label">Basics of Fishing</span>
+        </a>
+        <a href="../html/freshwater.html" class="image-button" style="background-image: url('../images/freshwater.jpg');">
+            <span class="button-label">Freshwater Fishing</span>
+        </a>
+        <a href="../html/saltwater.html" class="image-button" style="background-image: url('../images/saltwaterv2.jpg');">
+            <span class="button-label">Saltwater Fishing</span>
+        </a>
+    </section>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

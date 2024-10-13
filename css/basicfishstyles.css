@@ -1,0 +1,213 @@
+/* General Body and HTML Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #f8f9fa;
+}
+
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #007bff; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #097cc8;
+    padding: 5px 10px;
+    display: block;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the nav bar */
+    left: 0;
+    background: #f8f9fa;
+    width: 15vw; /* Full width of the viewport */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 999; /* Ensure dropdown is above other elements */
+}
+
+.dropdown a {
+    padding: 10px 20px;
+    text-align: left;
+    color: #097cc8;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background: #e0e0e0;
+}
+
+.search-signin input[type="search"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.search-signin button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+}
+
+/*Search bar*/
+.search-signin {
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive Navbar for Mobile and Desktop */
+.hamburger {
+    display: none; /* Hidden by default, shown in mobile view */
+}
+
+/*Desktop-only styles*/
+@media (min-width: 800px) {
+    .mobile-only {
+        display: none;  /*Hide mobile display*/
+    }
+    .desktop-only {
+        display: flex; /*Show desktop display*/
+    }
+}
+
+@media (max-width: 799px) {
+    .hamburger {
+        display: block; /* Shows hamburger icon in mobile view */
+    }
+
+    nav ul {
+        display: none; /* Hides navigation links initially in mobile view */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on your actual header height */
+        left: 0;
+        background-color: #fff;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        display: block; /* Makes links block for easier touch */
+    }
+
+    .mobile-only {
+        display: flex; /* Shows mobile search bar and sign-in */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .desktop-only {
+        display: none; /* Hide desktop search bar in mobile view */
+    }
+}
+
+/* Centered Content Styles */
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content-container {
+    max-width: 700px; /* Adjust as needed for your design */
+    width: 100%;
+    text-align: left; /* Centers text inside the container */
+}
+
+#gear article {
+    margin-bottom: 40px; /* Space between articles */
+}
+
+#gear img {
+    width: 800px;
+    height: 600px;
+    align-items: center;
+}
+#gear h1 {
+    font-size: 36px;
+}
+
+#gear p {
+    font-size: 20px;
+    font: roboto;
+}
+
+#gear article img {
+    width: 700px; /* Fixed width for all images */
+    height: 400px; /* Fixed height for all images */
+    display: block;
+    margin: 10px auto; /* Centers the images */
+    object-fit: cover; /* Ensures images cover the set dimensions without distortion */
+}
+
+h2 {
+    font-size: 30px;
+}
+
+/* General Typography */
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    color: #336699;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

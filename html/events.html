@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Fishing Made Easy!</title>
+    <link rel="stylesheet" href="../css/eventstyle.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../html/Website.html">
+                    <img src="../images/logo2.png" alt="Fishing Made Easy">
+                </a>
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="../html/Website.html">Home</a></li>
+                    <li>
+                        <a href="../html/guides.html">Guides</a>
+                        <div class="dropdown">
+                            <a href="../html/basics-fishing.html">Basics of Fishing</a>
+                            <a href="../html/freshwater.html">Freshwater Fishing</a>
+                            <a href="../html/saltwater.html">Saltwater Fishing</a>
+                        </div>
+                    </li>
+                    <li><a href="../html/events.html">Events</a></li>
+                    <li><a href="../html/equipment-reviews.html">Equipment Reviews</a></li>
+                    <li><a href="../html/locations.html">Locations</a></li>
+                    <li><a href="../html/about-us.html">About Us</a></li>
+                </ul>
+                <div class="search-signin mobile-only">
+                    <input type="search" placeholder="Search">
+                    <button onclick="window.location.href='../html/sign-in.html';">Sign In</button>
+                </div>
+            </nav>
+            <div class="search-signin desktop-only">
+                <input type="search" placeholder="Search">
+                <button onclick="window.location.href='../html/sign-in.html';">Sign In</button>
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <div class="content-container">
+            <h1>Upcoming Events</h1>
+            <div class="timeline">
+                <div class="timeline-event">
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 15, 2024</div>
+                        <h2>Summer Fishing Tournament</h2>
+                        <p>Join us for a day of competitive fishing at the annual Summer Fishing Tournament. Prizes awarded for the biggest catch!</p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-content">
+                        <div class="timeline-date">July 10, 2024</div>
+                        <h2>Family Fishing Day</h2>
+                        <p>A fun-filled day for families to enjoy fishing together. Activities include fishing lessons, games, and a BBQ lunch.</p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-content">
+                        <div class="timeline-date">August 5, 2024</div>
+                        <h2>Kayak Fishing Workshop</h2>
+                        <p>Learn the basics of kayak fishing in this hands-on workshop. Equipment provided.</p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-content">
+                        <div class="timeline-date">September 20, 2024</div>
+                        <h2>Coastal Clean-Up and Fishing Day</h2>
+                        <p>Help keep our beaches clean and enjoy a day of fishing. Volunteers needed for beach clean-up followed by a fishing session.</p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-content">
+                        <div class="timeline-date">October 25, 2024</div>
+                        <h2>Autumn Fly Fishing Clinic</h2>
+                        <p>Improve your fly fishing skills with our expert instructors. Open to all skill levels.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

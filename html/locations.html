@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations - Fishing Made Easy!</title>
+    <link rel="stylesheet" href="../css/locationstyle.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../html/Website.html">
+                    <img src="../images/logo2.png" alt="Fishing Made Easy">
+                </a>
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="../html/Website.html">Home</a></li>
+                    <li>
+                        <a href="../html/guides.html">Guides</a>
+                        <div class="dropdown">
+                            <a href="../html/basics-fishing.html">Basics of Fishing</a>
+                            <a href="../html/freshwater.html">Freshwater Fishing</a>
+                            <a href="../html/saltwater.html">Saltwater Fishing</a>
+                        </div>
+                    </li>
+                    <li><a href="../html/events.html">Events</a></li>
+                    <li><a href="../html/equipment-reviews.html">Equipment Reviews</a></li>
+                    <li><a href="../html/locations.html">Locations</a></li>
+                    <li><a href="../html/about-us.html">About Us</a></li>
+                </ul>
+                <div class="search-signin mobile-only">
+                    <input type="search" placeholder="Search">
+                    <button onclick="window.location.href='../html/sign-in.html';">Sign In</button>
+                </div>
+            </nav>
+            <div class="search-signin desktop-only">
+                <input type="search" placeholder="Search">
+                <button onclick="window.location.href='../html/sign-in.html';">Sign In</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="long-form-container">
+            <h1>Locations</h1>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7078.268476565504!2d153.01932556024107!3d-27.4962003730912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915b9ac238ce7b%3A0x104565b67b28b551!2sDutton%20Park%20Recreation%20Hub!5e0!3m2!1sen!2sau!4v1715060345685!5m2!1sen!2sau" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

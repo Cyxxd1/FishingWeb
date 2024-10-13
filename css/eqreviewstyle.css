@@ -1,0 +1,227 @@
+/* General Body and HTML Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #f8f9fa;
+    position: relative;
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #097cc8;
+    padding: 5px 10px;
+    display: block;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the nav bar */
+    left: 0;
+    background: #f8f9fa;
+    width: 100%; /* Full width of the dropdown */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 999; /* Ensure dropdown is above other elements */
+}
+
+.dropdown a {
+    padding: 10px 20px;
+    text-align: left;
+    color: #097cc8;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background: #e0e0e0;
+}
+
+.search-signin input[type="search"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.search-signin button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+}
+
+/*Search bar*/
+.search-signin {
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive Navbar for Mobile and Desktop */
+.hamburger {
+    display: none; /* Hidden by default, shown in mobile view */
+}
+
+@media (min-width: 800px) {
+    .mobile-only {
+        display: none; /* Hide mobile display */
+    }
+    .desktop-only {
+        display: flex; /* Show desktop display */
+    }
+}
+
+@media (max-width: 799px) {
+    .hamburger {
+        display: block; /* Show hamburger icon in mobile view */
+    }
+
+    nav ul {
+        display: none; /* Hide navigation links initially in mobile view */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on your actual header height */
+        left: 0;
+        background-color: #fff;
+        z-index: 1000; /* Ensure menu is above other content */
+    }
+
+    nav ul.show {
+        display: flex; /* Show navigation links when toggled */
+    }
+
+    nav ul li a {
+        padding: 10px;
+        display: block; /* Makes links block for easier touch */
+    }
+
+    .mobile-only {
+        display: flex; /* Show mobile search bar and sign-in */
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/* Centered Content Styles */
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1; /* Ensure content is below navbar */
+}
+
+.slider-container {
+    margin-top: 50px; /* Adds a gap between navbar and slider */
+    text-align: center;
+    width: 900px; /* Center the slider container */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; /* Required for positioning buttons */
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds gap between images */
+    flex-wrap: wrap; /* Allow wrapping of slides */
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 400px;
+    height: 400px;
+}
+
+.text-box {
+    width: 400px; /* Same width as images */
+    text-align: left;
+    padding: 10px;
+    background: #f8f9fa;
+    box-sizing: border-box;
+}
+
+.text-box h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.text-box p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Navigation Buttons */
+.navigation-button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.prev {
+    left: -50px; /* Adjust as needed */
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: -50px; /* Adjust as needed */
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}

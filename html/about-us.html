@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishing Made Easy!</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../html/Website.html">
+                <img src="../images/logo2.png" alt="Fishing Made Easy">
+                </a>
+            </div>
+            <!-- Hamburger icon added here -->
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <nav>
+                <!-- Added an id to the ul for easier JavaScript manipulation -->
+                <ul id="nav-menu">
+                    <li><a href="../html/Website.html">Home</a></li>
+                    <li>
+                        <a href="../html/guides.html">Guides</a>
+                        <div class="dropdown">
+                            <a href="../html/basics-fishing.html">Basics of Fishing</a>
+                            <a href="../html/freshwater.html">Freshwater Fishing</a>
+                            <a href="../html/saltwater.html">Saltwater Fishing</a>
+                        </div>
+                    </li>
+                    <li><a href="../html/events.html">Events</a></li>
+                    <li><a href="../html/equipment-reviews.html">Equipment Reviews</a></li>
+                    <li><a href="../html/locations.html">Locations</a></li>
+                    <li><a href="../html/about-us.html">About Us</a></li>
+                </ul>
+                <!-- Mobile view search and sign-in -->
+                <mobile-seach-bar class="search-signin mobile-only">
+                    <input type="search" placeholder="Search">
+                    <button onclick="window.location.href='../html/sign-in.html';">Sign In</button>
+                </mobile-seach-bar>
+            </nav>
+            <!-- Desktop view search and sign-in -->
+            <search-bar class="search-signin desktop-only">
+                <input type="search" placeholder="Search">
+                <button onclick="window.location.href='../html/sign-in.html';">Sign In</button>
+            </search-bar>
+        </div>
+    </header>
+    <main class="aboutuscontent">
+        <div class = "text">
+            <h2>About Us</h2>
+            <p>We are a group of fishing enthusiasts driven by a shared love for the sport and a common goal: to lower the barrier of entry into fishing while spreading knowledge among fellow anglers. </p>
+
+            <p>
+            “Fishing Made Easy” offers resources for beginners, expert advice, and community-driven insights to help enthusiasts improve their skills and connect with others. 
+            </p>
+            <p>
+            By fostering a welcoming environment, we aim to make fishing accessible to everyone, from those casting their first line to seasoned pros seeking to share their expertise.
+            </p>
+        </div>
+        <div class="image-section">
+            <img src ="../images/about us.jpg">
+        </div>
+    </main>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
